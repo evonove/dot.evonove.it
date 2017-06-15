@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <title>{{ .Title }}</title>
-</head>
+{{ partial "head.html" }}
 <body>
-  <header></header>
+  {{ partial "header.html" }}
   <main>
     <section class="splash">
       <div class="dot">
         <div class="dot-logo">Dot</div>
-        <div class="dot-description">
+        <div class="dot-about">
           <p>Django OAuth Toolkit provides out of the box all the endpoints, data and logic needed to add OAuth2 capabilities to Django. It makes extensive use of the excellent OAuthLib, so that everything is rfc-compliant.</p>
         </div>
         <div class="dot-getstarted">Get Started</div>
@@ -71,8 +65,8 @@
       </div>
     </section>
   </main>
-  <footer>
-    <p>&copy 2017, Designed and Coded by Evonove</p>
-  </footer>
+
+  {{ partial "footer.html" }}
+
 </body>
 </html>
