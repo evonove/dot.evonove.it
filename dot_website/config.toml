@@ -1,0 +1,7 @@
+baseURL = "https://dot.evonove.it/"
+languageCode = "en-us"
+title = "DOT website"
+
+[Author]
+  name = "Alessio Rapini"
+  github = "rub"
