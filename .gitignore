@@ -1,0 +1,5 @@
+# Hugo
+dot_website/public
+
+# MacOS
+*.DS_Store
