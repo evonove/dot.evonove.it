@@ -16,9 +16,12 @@
 
 // Components
 @import
-  "components/buttons";
+  "components/logo",
+  "components/buttons",
+  "components/icons";
 
 // Layout
 @import
   "layout/header",
+  "layout/splash",
   "layout/footer";

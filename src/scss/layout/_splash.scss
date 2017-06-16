@@ -1,0 +1,23 @@
+// Splash section
+// --------------
+
+.splash {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.594rem;
+  width: 853px;
+
+  & * + * {
+    margin-top: 2.25rem;
+  }
+}
+
+.dot-about {
+  text-align: center;
+}

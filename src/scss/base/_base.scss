@@ -3,10 +3,12 @@
 
 // Set up default styles on the root element:
 // set box-sizing to border-box; [1]
-// set default font rules; [2]
+// set dafault text color; [2]
+// set default font rules; [3]
 html {
   box-sizing: border-box; // [1]
-  font: 20px/1.5 $ubuntu; // [2]
+  color: $darkgrey; // [2]
+  font: 20px/1.5 $ubuntu; // [3]
 }
 
 /*
