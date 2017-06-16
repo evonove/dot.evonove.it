@@ -1,0 +1,24 @@
+// Feature section
+// ---------------
+
+.features {
+  margin: auto;
+  max-width: 1280px;
+}
+
+.features-container {
+  display: flex;
+
+  // Sets a horizontal flow to the feature boxes.
+  & > * + * {
+    margin-left: 7.594rem;
+  }
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature p {
+  margin-top: 1rem;
+}

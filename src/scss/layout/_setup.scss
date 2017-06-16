@@ -1,0 +1,44 @@
+// Setup section
+// -------------
+
+.setup {
+  margin: 11.391rem auto 0;
+  max-width: 853px;
+}
+
+.setup-heading {
+  text-align: center;
+}
+
+.setup-container {
+  margin-top: 3.375rem;
+
+  & > * + * {
+    margin-top: 5.063rem;
+  }
+}
+
+.step {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Select every odd step box and [1] invert its children.
+.step:nth-child(odd) .step-code {
+  order: 2; // [1]
+}
+
+// Select every odd step box and [1] invert its children.
+.step:nth-child(odd) .step-description {
+  order: 1; // [1]
+}
+
+.step-description-requirements {
+  font-size: 0.667rem;
+  margin-top: 0.667rem;
+}
+
+.step-description-requirements ul {
+  list-style-type: circle;
+  padding-left: 1rem;
+}

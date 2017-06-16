@@ -4,6 +4,8 @@
 .splash {
   display: flex;
   justify-content: center;
+  padding-bottom: 11.391rem;
+  position: relative;
 }
 
 .dot {
@@ -13,11 +15,20 @@
   margin-top: 7.594rem;
   width: 853px;
 
-  & * + * {
+  & > * + * {
     margin-top: 2.25rem;
   }
 }
 
 .dot-about {
   text-align: center;
+}
+
+// [1] Avoids white space between the curved background and the main linear
+//     background.
+.curved_background {
+  bottom: -1px; // [1]
+  fill: $lightorange;
+  position: absolute;
+  width: 100%;
 }

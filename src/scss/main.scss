@@ -17,11 +17,13 @@
 // Components
 @import
   "components/logo",
-  "components/buttons",
-  "components/icons";
+  "components/buttons";
 
 // Layout
 @import
   "layout/header",
   "layout/splash",
+  "layout/features",
+  "layout/setup",
+  "layout/learn-more",
   "layout/footer";

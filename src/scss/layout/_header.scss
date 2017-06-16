@@ -7,9 +7,18 @@
   padding: 1rem 2.25rem;
   position: absolute;
   width: 100%;
+  z-index: $z-header;
 }
 
 .dot_mark {
   height: 17px;
   width: 17px;
+}
+
+.header-github_button {
+  cursor: pointer;
+}
+
+.github_icon {
+  width: 30px;
 }
