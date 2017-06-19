@@ -23,7 +23,7 @@
   justify-content: flex-start;
 }
 
-// Select every odd step box and [1] invert the terminal's order.
+// Select every even step box and [1] invert the terminal's order.
 .step:nth-child(even) .step-code {
   order: 2; // [1]
 }
@@ -35,7 +35,7 @@
   margin-left: 45px;
 }
 
-// Select every odd step box and:
+// Select every even step box and:
 // [1] invert the description's order
 // [2] align the description to the left.
 .step:nth-child(even) .step-description {
