@@ -3,11 +3,7 @@
 
 .footer {
   margin-top: 7.594rem;
-  padding-bottom: 3.375rem;
-
-  @media #{$medium} {
-    padding-bottom: 2.25rem;
-  }
+  padding-bottom: 2.25rem;
 }
 
 .footer p {

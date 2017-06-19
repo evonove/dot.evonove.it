@@ -15,17 +15,29 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: extractSass.extract({
-        use: [{
-            loader: "css-loader"
-        }, {
-            loader: "sass-loader"
-        }],
-        fallback: "style-loader"
-      })
-    }]
+    rules: [
+      // Process Sass files
+      {
+        test: /\.scss$/,
+        use: extractSass.extract({
+          use: [{
+              loader: "css-loader"
+          }, {
+              loader: "sass-loader"
+          }],
+          fallback: "style-loader"
+        })
+      },
+      // Process images
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     extractSass
