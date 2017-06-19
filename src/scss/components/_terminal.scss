@@ -1,0 +1,101 @@
+// Terminal component styles
+// -------------------------
+
+// Local variables
+$t-header-gradient: linear-gradient(0deg, rgb(216, 216, 216), rgb(236, 236, 236));
+$t-header-close-color: rgb(255, 97, 89);
+$t-header-minimize-color: rgb(255, 191, 47);
+$t-header-maximize-color: rgb(37, 204, 62);
+$t-background-color: rgb(7, 52, 72);
+$t-text-color: rgb(164, 211, 230);
+$t-prompt-color: rgb(189, 227, 113);
+$t-path-color: rgb(94, 215, 255);
+
+/* Inspired by https://codepen.io/marcbizal/pen/VLKoam */
+.terminal {
+  width: 534px;
+}
+
+.terminal-header {
+  background: $t-header-gradient;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  border-top: 1px solid $white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 13px;
+  height: 22px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.terminal-header-buttons {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin-left: 8px;
+
+  & > * + * {
+    margin-left: 8px;
+  }
+}
+
+.terminal-header-buttons-close,
+.terminal-header-buttons-minimize,
+.terminal-header-buttons-maximize {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.terminal-header-buttons-close {
+  background-color: $t-header-close-color;
+}
+
+.terminal-header-buttons-minimize {
+  background-color: $t-header-minimize-color;
+}
+
+.terminal-header-buttons-maximize {
+  background-color: $t-header-maximize-color;
+}
+
+.terminal-header-title {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.terminal-window {
+  background-color: $t-background-color;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: $t-text-color;
+  font-family: $source-code-pro;
+  font-size: 14px;
+  height: 240px;
+  padding: 4px;
+}
+
+.terminal-window-line-prompt {
+  color: $t-prompt-color;
+}
+
+.terminal-window-line-path {
+  color: $t-path-color;
+}
+
+// This selector is used to indent all code lines except for the first and the
+// last one.
+.terminal-window-line:not(:first-child):not(:last-child) .terminal-window-line-code {
+  margin-left: 1rem;
+}
+
+// Adds a blinking caret to the end of the last line of code.
+.terminal-window-line:last-child::after {
+  animation: blink 2s steps(1) infinite;
+  content: "|";
+}

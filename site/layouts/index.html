@@ -34,9 +34,11 @@
       <h1 class="setup-heading">How to setup</h1>
       <div class="setup-container">
         <div class="step">
-          <div class="step-code"></div>
+          <div class="step-code">
+            {{ partial "terminal-first.html" }}
+          </div>
           <div class="step-description">
-            <p>Install with pip</p>
+            <p>Install with <span class="text-code">pip</span></p>
             <div class="step-description-requirements">
               <p>Requirements:</p>
               <ul>
@@ -47,15 +49,19 @@
           </div>
         </div>
         <div class="step">
-          <div class="step-code"></div>
+          <div class="step-code">
+            {{ partial "terminal-second.html" }}
+          </div>
           <div class="step-description">
-            <p>Add oauth2_provider to your INSTALLED_APPS.</p>
+            <p>Add <span class="text-code">oauth2_provider</span> to your <span class="text-code">INSTALLED_APPS</span>.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-code"></div>
+          <div class="step-code">
+            {{ partial "terminal-third.html" }}
+          </div>
           <div class="step-description">
-            <p>If you need an OAuth2 provider you’ll want to add the following to your urls.py.</p>
+            <p>If you need an OAuth2 provider you’ll want to add the following to your <span class="text-code">urls.py</span>.</p>
           </div>
         </div>
       </div>

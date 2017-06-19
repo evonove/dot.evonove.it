@@ -20,17 +20,29 @@
 
 .step {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-// Select every odd step box and [1] invert its children.
-.step:nth-child(odd) .step-code {
+// Select every odd step box and [1] invert the terminal's order.
+.step:nth-child(even) .step-code {
   order: 2; // [1]
 }
 
-// Select every odd step box and [1] invert its children.
-.step:nth-child(odd) .step-description {
+.step-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 45px;
+}
+
+// Select every odd step box and:
+// [1] invert the description's order
+// [2] align the description to the left.
+.step:nth-child(even) .step-description {
   order: 1; // [1]
+  margin-left: 0; // [2]
+  margin-right: 45px; // [2]
+  text-align: right; // [2]
 }
 
 .step-description-requirements {
