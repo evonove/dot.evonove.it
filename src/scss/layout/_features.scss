@@ -12,6 +12,24 @@
   // Sets a horizontal flow to the feature boxes.
   & > * + * {
     margin-left: 7.594rem;
+
+    @media #{$large} {
+      margin-left: 3.375rem;
+    }
+
+    @media #{$medium} {
+      margin-left: 0;
+      margin-top: 5.063rem;
+    }
+  }
+
+  @media #{$medium} {
+    flex-direction: column;
+    padding: 0 5.063rem;
+  }
+
+  @media #{$medium} {
+    padding: 0;
   }
 }
 

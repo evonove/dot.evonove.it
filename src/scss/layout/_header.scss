@@ -8,6 +8,10 @@
   position: absolute;
   width: 100%;
   z-index: $z-header;
+
+  @media #{$small} {
+    padding: 1rem;
+  }
 }
 
 .dot_mark {

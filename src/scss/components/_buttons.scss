@@ -12,6 +12,11 @@
   text-transform: uppercase;
   width: 227px;
 
+  @media #{$small} {
+    height: 55px;
+    width: 182px;
+  }
+
   @include event {
     color: $white;
   }

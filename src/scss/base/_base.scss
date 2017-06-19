@@ -9,6 +9,14 @@ html {
   box-sizing: border-box; // [1]
   color: $darkgrey; // [2]
   font: 300 20px/1.5 $ubuntu; // [3]
+
+  @media #{$medium} {
+    font-size: 18px;
+  }
+
+  @media #{$small} {
+    font-size: 16px;
+  }
 }
 
 /*
@@ -26,5 +34,9 @@ html {
 .gradient_container {
   background: linear-gradient(to bottom, rgba(240,150,33,1) 0%, rgba(240,82,55,1) 100%);
   color: $white;
-  padding-top: 2.25rem;
+  padding: 2.25rem 2.25rem 0;
+
+  @media #{$small} {
+    padding: 2.25rem 2.25rem 1rem;
+  }
 }

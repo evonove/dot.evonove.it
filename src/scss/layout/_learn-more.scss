@@ -17,8 +17,18 @@
   display: flex;
   margin-top: 3.375rem;
 
+  @media #{$small} {
+    align-items: center;
+    flex-direction: column;
+  }
+
   // Sets a horizontal flow to the buttons.
   & > * + * {
-    margin-left: 3.375rem;
+    margin-left: 2.25rem;
+
+    @media #{$small} {
+      margin-left: 0;
+      margin-top: 2.5rem;
+    }
   }
 }

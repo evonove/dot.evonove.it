@@ -3,4 +3,12 @@
 
 .logo {
   width: 342px;
+
+  @media #{$medium} {
+    width: 205px;
+  }
+
+  @media #{$small} {
+    width: 182px;
+  }
 }

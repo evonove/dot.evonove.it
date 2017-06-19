@@ -21,11 +21,27 @@
 .step {
   display: flex;
   justify-content: flex-start;
+
+  @media #{$medium} {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+
+.step-code {
+  @media #{$medium} {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.25rem;
+    width: 100%;
+  }
 }
 
 // Select every even step box and [1] invert the terminal's order.
 .step:nth-child(even) .step-code {
-  order: 2; // [1]
+  @media #{$min-medium} {
+    order: 2; // [1]
+  }
 }
 
 .step-description {
@@ -33,16 +49,24 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 45px;
+
+  @media #{$medium} {
+    margin-left: 0;
+    max-width: 356px;
+    text-align: center;
+  }
 }
 
 // Select every even step box and:
 // [1] invert the description's order
 // [2] align the description to the left.
 .step:nth-child(even) .step-description {
-  order: 1; // [1]
-  margin-left: 0; // [2]
-  margin-right: 45px; // [2]
-  text-align: right; // [2]
+  @media #{$min-medium} {
+    margin-left: 0; // [2]
+    margin-right: 45px; // [2]
+    order: 1; // [1]
+    text-align: right; // [2]
+  }
 }
 
 .step-description-requirements {
