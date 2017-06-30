@@ -35,8 +35,27 @@
 
 .feature {
   text-align: center;
+  width: 100%;
 }
 
 .feature p {
   margin-top: 1rem;
+}
+
+.feature-link {
+  color: $white;
+  text-decoration: underline;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.feature-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.25rem;
 }
