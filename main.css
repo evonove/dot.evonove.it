@@ -678,10 +678,23 @@ h2 {
       padding: 0; } }
 
 .feature {
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .feature p {
   margin-top: 1rem; }
+
+.feature-link {
+  color: white;
+  text-decoration: underline; }
+  .feature-link:hover, .feature-link:active, .feature-link:focus {
+    color: white;
+    text-decoration: underline; }
+
+.feature-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.25rem; }
 
 .setup {
   margin: 11.391rem auto 0;
@@ -739,30 +752,6 @@ h2 {
 .step-description-requirements ul {
   list-style-type: circle;
   padding-left: 1rem; }
-
-.learn_more {
-  display: flex;
-  margin: 7.594rem auto 0;
-  max-width: 853px;
-  flex-direction: column;
-  align-items: center; }
-
-.learn_more-heading {
-  text-align: center; }
-
-.learn_more-buttons {
-  display: flex;
-  margin-top: 3.375rem; }
-  @media (max-width: 600px) {
-    .learn_more-buttons {
-      align-items: center;
-      flex-direction: column; } }
-  .learn_more-buttons > * + * {
-    margin-left: 2.25rem; }
-    @media (max-width: 600px) {
-      .learn_more-buttons > * + * {
-        margin-left: 0;
-        margin-top: 2.5rem; } }
 
 .footer {
   margin-top: 7.594rem;
